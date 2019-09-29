@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 200px;
+            height: 200px;
+        }
+        .b{
+            background-color: red;
+        }
+        .c{
+            border-radius:40px; 
+        }
+        .d{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">298329830</div>
+    <script>
+        var madiv = document.getElementById('mydiv');
+        console.log(madiv.className);
+        mydiv.className = 'a d c';
+        
+    </script>
+</body>
+</html>

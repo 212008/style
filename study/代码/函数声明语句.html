@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //关键词 函数名 (参数列表)
+
+        function aname(){
+            //执行语句
+            alert('123');
+        }
+        aname();
+
+        //变量名 关键词(参数列表)
+        var a = function(){
+            //执行语句
+        }
+        //参数调用
+        a();
+
+        //匿名函数的自调
+        (function(){
+            //执行语句
+        })()
+
+        function aaa(x,y,z){
+            console.log(arguments[1])
+        }
+        aaa(a,b,c);
+    </script>
+</body>
+</html>

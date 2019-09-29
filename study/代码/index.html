@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+        .x{
+            width: 200px;
+            height: 200px;
+        }
+        .y{
+            border: 2px solid red;
+        }
+        .z{
+            border: 2px solid blue;
+        }
+    </style>
+<body>
+    <!-- 需求3:
+1.一个200*200的红色方框,一个按钮
+2.点击按钮,让红色方框变成蓝色
+3.必须用className的赋值方法变化 -->
+    <div id="mydiv" class="x y"></div>
+    <button id="btn">按钮</button>
+    <script>
+        var div = document.getElementById('mydiv');
+        var btn = document.getElementById('btn');
+        btn.onclick = function (){
+            div.className='x z';
+        }
+    </script>
+</body>
+</html>

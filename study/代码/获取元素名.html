@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="maydiv"></div> -->
+    <h1 id="h">123456789</h1>
+    <script>
+         var div = document.getElementById('mydiv');
+         console.log(div.tagName);//DIV
+
+        
+        var h = document.getElementById('h');
+        var a = h.tagName;
+
+        //方法一:
+        //那些标签是加粗的h1~h6，b，strong
+        if(a == 'H1'||a == 'H2'||a == 'H3'||a == 'H4'||a == 'H5'||a == 'H6'||a == 'B'||a == 'STRONG'){
+            h.style.fontWeight = 400;
+        }
+        //方法二：
+        //不管是不是粗体都变为细的
+            h.style.fontWeight = 400;
+
+        //方法三：
+        var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG']
+        //console.log(arr.indexOf('DIV'))
+        //检测数组里是否有粗体的标签名，返回-1以外的都是粗体
+        var isTure = arr.indexOf(h)
+        //判断是否是粗体标签名，就改变样式
+        if(isTure != -1){
+            h.style.fontWeight = 400;
+            h.style.color = 'red'
+        }
+    </script>
+</body>
+</html>
