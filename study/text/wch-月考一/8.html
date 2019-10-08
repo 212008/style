@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius:50%;
+            transition: 1s; 
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <script>
+        var mydiv = document.getElementsByClassName('a')
+        mydiv.onclick = function(){
+            mydiv.style.backgroundColor = 'blue';
+            mydiv.style.borderRadius = 0;
+        }
+    </script>
+</body>
+</html>

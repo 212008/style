@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">你好周一</h1>
+    <button id="b">替换</button>
+    <script>
+        var a = document.getElementById('a');
+        var b = document.getElementById('b');
+        b.onclick = function(){
+            a.tagName = 'H3'
+        }        
+    </script>
+</body>
+</html>
